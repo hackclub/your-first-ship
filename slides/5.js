@@ -24,14 +24,14 @@ export default function SlideFive() {
             mx: 'auto'
           }}
         >
-          <Image src={messageSS} alt="Messagee" quality="100" />
+          <Image src={messageSS} alt="Message" quality="100" />
         </Box>
         <Heading
           as="h1"
           color="white"
           sx={{ fontSize: [6, 7], fontWeight: 900 }}
         >
-          5: Introduce Your Project
+          4: Introduce Your Project
         </Heading>
       </Box>
       <style>
