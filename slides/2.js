@@ -1,8 +1,11 @@
 import { Box, Grid, Heading } from 'theme-ui'
 import Image from 'next/image'
 import qrCode from '../public/qrcode.png'
+import { useRouter } from 'next/router'
 
 export default function SlideTwo() {
+  let router = useRouter()
+  console.log(router.query)
   return (
     <Box
       sx={{
@@ -12,7 +15,7 @@ export default function SlideTwo() {
         textAlign: 'center',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
       }}
       color="white"
     >
@@ -37,17 +40,27 @@ export default function SlideTwo() {
             mx: 'auto'
           }}
         >
-          <Image src={qrCode} height="300" width="300" />
+          <Image
+            src={`http://api.qrserver.com/v1/create-qr-code/?data=${encodeURI(
+              `https://hack.af/slack${
+                router.query.channel ? '?c=' + router.query.channel : ''
+              }`
+            )}&size=500x500`}
+            height="300"
+            width="300"
+          />
           <Heading
             sx={{
               color: '#5295D5',
               textTransform: 'uppercase',
               textAlign: 'center',
               mt: 2,
-              fontSize: [3, 4]
+              fontSize: [3, 4],
+              maxWidth: '300px'
             }}
           >
             hack.af/slack
+            {router.query.channel ? '?c=' + router.query.channel : ''}
           </Heading>
         </Box>
       </Box>
