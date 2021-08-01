@@ -29,7 +29,7 @@ export default function SlideOne() {
           </Heading>
         </Box>
       </Container>
-      <Image src={profilePic} layout="fill" placeholder="blur" quality="100" />
+      <Image src={profilePic} layout="fill" quality="100" />
       <style>
         {`
         img{
