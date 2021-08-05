@@ -1,6 +1,6 @@
 import { Box, Container, Heading } from 'theme-ui'
 import Image from 'next/image'
-import profilePic from '../public/ship_bg.png'
+import bgPic from '../public/ship_bg.png'
 
 export default function SlideOne() {
   return (
@@ -30,7 +30,7 @@ export default function SlideOne() {
           </Heading>
         </Box>
       </Container>
-      <Image src={profilePic} layout="fill" quality="100" />
+      <Image src={bgPic} layout="fill" quality="100" />
       <style>
         {`
         img{
