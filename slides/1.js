@@ -4,7 +4,7 @@ import bgPic from '../public/ship_bg.png'
 
 export default function SlideOne() {
   return (
-    <Container>
+    <Container sx={{background: '#F0984A'}}>
       <Container
         sx={{
           position: 'absolute',
@@ -14,7 +14,6 @@ export default function SlideOne() {
           display: 'flex',
           justifyContent: 'center',
           textAlign: 'center',
-          background: '#F0984A'
         }}
       >
         <Box mt={4}>
