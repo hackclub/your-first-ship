@@ -13,7 +13,8 @@ export default function SlideOne() {
           zIndex: '999',
           display: 'flex',
           justifyContent: 'center',
-          textAlign: 'center'
+          textAlign: 'center',
+          background: '#F0984A'
         }}
       >
         <Box mt={4}>
