@@ -24,7 +24,7 @@ export default function SlideFour() {
           3: Enter the Ship Channel
         </Heading>
         <Image
-          src="/message.svg"
+          src="/slack.svg"
           width="1000px"
           height="580px"
         />
